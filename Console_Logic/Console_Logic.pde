@@ -35,8 +35,10 @@ while (myPort.available() > 0) {
     int sensorValue = myPort.read();
     println(sensorValue);
     
-    if (sensorValue > 0);
-      myMovie.pause();
-
+    if (sensorValue > 0) {
       myMovie.play();
+    } else {
+      myMovie.pause();
+    }
+    
 }}
